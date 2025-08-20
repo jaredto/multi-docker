@@ -19,11 +19,11 @@ jobs:
       - run: docker build -t jaredto2/multi-worker ./worker
  
     
-      #- run: docker push jaredto2/multi-client
-      #- run: docker push jaredto2/multi-nginx
-      #- run: docker push jaredto2/multi-server
-      #- run: docker push jaredto2/multi-worker
- #
+      - run: docker push jaredto2/multi-client
+      - run: docker push jaredto2/multi-nginx
+      - run: docker push jaredto2/multi-server
+      - run: docker push jaredto2/multi-worker
+ 
       #- name: Generate deployment package
       #  run: zip -r deploy.zip . -x '*.git*'
  #
